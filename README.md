@@ -11,7 +11,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 - install Xcode from Mac App Store
 
-[Download Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12#)
+  [Download Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12#)
 
 - install the Xcode
 
