@@ -1,4 +1,4 @@
-# Rails Setup Guide For macOS
+Rails Setup Guide For macOS
 =============================
 
 The purpose of this step by step tutorial is to provide a very simple example of configuring a minimal Rails environment.
