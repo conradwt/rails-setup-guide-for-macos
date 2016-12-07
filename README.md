@@ -1,7 +1,11 @@
-# Minimal Rails Environment Installation
-========================================
+# Rails Setup Guide For macOS
+=============================
 
 The purpose of this step by step tutorial is to provide a very simple example of configuring a minimal Rails environment.
+
+# Software Requirements
+
+- macOS 10.12.1 or later
 
 # Installation Steps
 
@@ -15,7 +19,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 - install MacPorts for OS X
 
-  [Download MacPorts](https://distfiles.macports.org/MacPorts/MacPorts-2.3.4-10.11-ElCapitan.pkg)
+  [Download MacPorts](https://github.com/macports/macports-base/releases/download/v2.3.5/MacPorts-2.3.5-10.12-Sierra.pkg)
 
 - open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
 
@@ -25,11 +29,28 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
   $ xcode-select --install
 
-- change directory to the installation folder
+- clone this repository
 
-  $ cd ~/Downloads/macosx
+  $ git clone https://github.com/conradwt/rails-setup-guide-for-macos
 
-- set the environment profile
+- change directory to the cloned repository
+
+  $ cd path/rails-setup-guide-for-macos
+
+- remove existing
+
+  $ mv ~/.bashrc ~/.bashrc.orig
+  $ mv ~/.bash_login ~/.bash_login.orig
+  $ mv ~/.bash_profile ~/.bash_profile.orig
+  $ mv ~/.profile ~/.profile.orig
+  $ mv ~/.zshrc ~/.zshrc.orig
+
+  Note: Some or most of the above files may not exist.  Thus, if you get the
+        following error it's OK:
+
+        e.g.  mv: rename .bashrc to .bashrc.orig: No such file or directory
+
+- configure the .profile
 
   $ cp sample.profile $HOME/.profile
 
@@ -123,7 +144,7 @@ $ = stuff that you type in the terminal
 
 Bug reports and feature requests can be filed for the <add project here> project here:
 
-* [File Bug Reports and Features](https://github.com/conradwt/<add project here>/issues)
+* [File Bug Reports and Features](https://github.com/conradwt/rails-setup-guide-for-macos/issues)
 
 ## Contact
 
