@@ -82,11 +82,11 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
   $ ./install-rbenv-plugins.sh
 
-- install Ruby 2.3.1
+- install Ruby 2.3.3
 
-  $ rbenv install 2.3.1
+  $ rbenv install 2.3.3
 
-  $ rbenv global 2.3.1
+  $ rbenv global 2.3.3
 
 - install Ruby on Rails web development framework
 
@@ -160,4 +160,4 @@ This repository is released under the [MIT License](http://www.opensource.org/li
 
 ## Copyright
 
-&copy; Copyright 2014 - 2016 Conrad Taylor. All Rights Reserved.
+&copy; Copyright 2014 - 2017 Conrad Taylor. All Rights Reserved.
