@@ -128,11 +128,15 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 20) from the terminal menu, Shell -> Import, select sample.terminal file
 
-  - Terminal -> Preferences -> Settings, click the 'sample' profile on the left, click Default
+  ```
+  Terminal -> Preferences -> Settings, click the 'sample' profile on the left, click Default
+  ```
 
 21) create a Github.com account
 
+  ```
   Note:  Skip this step if you already have an account.
+  ```
 
 22) set the Git configuration  
 
