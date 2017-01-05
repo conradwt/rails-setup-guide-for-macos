@@ -7,54 +7,65 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 - macOS 10.12.1 or later
 
-# Installation Steps
+## Installation Steps
 
-- install Xcode from Mac App Store
+1) install Xcode from Mac App Store
 
   [Download Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12#)
 
-- install the Xcode
+2) install the Xcode
 
+  ```
   $ xcode-select --install
+  ```
 
-- install MacPorts for OS X
+3) install MacPorts for OS X
 
   [Download MacPorts](https://github.com/macports/macports-base/releases/download/v2.3.5/MacPorts-2.3.5-10.12-Sierra.pkg)
 
-- open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
+4) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
 
-- open the Terminal.app
+5) open the Terminal.app
 
-- from the Terminal.app, install command line tools
+6) from the Terminal.app, install command line tools
 
+  ```
   $ xcode-select --install
+  ```
 
-- clone this repository
+7) clone this repository
 
+  ```
   $ git clone https://github.com/conradwt/rails-setup-guide-for-macos
+  ```
 
-- change directory to the cloned repository
+8) change directory to the cloned repository
 
+  ```
   $ cd path/rails-setup-guide-for-macos
+  ```
 
-- remove existing
+9) remove existing
 
+  ```
   $ mv ~/.bashrc ~/.bashrc.orig
   $ mv ~/.bash_login ~/.bash_login.orig
   $ mv ~/.bash_profile ~/.bash_profile.orig
   $ mv ~/.profile ~/.profile.orig
   $ mv ~/.zshrc ~/.zshrc.orig
+  ```
 
   Note: Some or most of the above files may not exist.  Thus, if you get the
         following error it's OK:
 
         e.g.  mv: rename .bashrc to .bashrc.orig: No such file or directory
 
-- configure the .profile
+10) configure the .profile
 
+  ```
   $ cp sample.profile $HOME/.profile
-
   $ . ~/.profile
+  ```
 
   Note:  If you see the following message,
 
@@ -62,61 +73,72 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
   please continue to the next step.
 
-- set the Git completion
+11) set the Git completion
 
+  ```
   $ cp sample.git-completion.sh $HOME/.git-completion.sh
+  ```
 
-- install required ports from MacPorts
+12) install required ports from MacPorts
 
+  ```
   $ chmod +x install-ports.sh
-
   $ ./install-ports.sh
+  ```
 
-- install RBenv
+13) install RBenv
 
+  ```
   $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+  ```
 
-- install all of the approved plugins RBenv plugins
+14) install all of the approved plugins RBenv plugins
 
+  ```
   $ chmod +x install-rbenv-plugins.sh
-
   $ ./install-rbenv-plugins.sh
+  ```
 
-- install Ruby 2.3.3
+15) install Ruby 2.3.3
 
+  ```
   $ rbenv install 2.3.3
-
   $ rbenv global 2.3.3
+  ```
 
-- install Ruby on Rails web development framework
+16) install Ruby on Rails web development framework
 
+  ```
   $ gem install bundler
-
   $ gem install rails
-
   $ rbenv rehash
+  ```
 
-- install Heroku Toolbelt
+17) install Heroku Toolbelt
 
   [Download Heroku Toolbelt](https://toolbelt.heroku.com)
 
-- open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
+18) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
 
-- set the terminal
+19) set the terminal
 
+  ```
   $ cp sample.terminal $HOME/.
+  ```
 
-- from the terminal menu, Shell -> Import, select sample.terminal file
+20) from the terminal menu, Shell -> Import, select sample.terminal file
 
   - Terminal -> Preferences -> Settings, click the 'sample' profile on the left, click Default
 
-- create a Github.com account
+21) create a Github.com account
 
   Note:  Skip this step if you already have an account.
 
-- set the Git configuration  
+22) set the Git configuration  
 
+  ```
   $ cp sample.gitconfig ~/.gitconfig
+  ```
 
   Note:  Replace < TEXT > with your contact information.  For example,
 
@@ -132,11 +154,13 @@ The purpose of this step by step tutorial is to provide a very simple example of
     name = John Doe
     email = john.doe@example.com
 
-- set up PostgreSQL Server
+23) set up PostgreSQL Server
 
+  ```
   $ sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb
   $ sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb
   $ sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'
+  ```
 
 $ = stuff that you type in the terminal
 
