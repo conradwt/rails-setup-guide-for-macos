@@ -5,7 +5,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 # Software Requirements
 
-- macOS 10.12.1 or later
+- macOS 10.12.2 or later
 
 ## Installation Steps
 
