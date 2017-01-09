@@ -69,7 +69,9 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
   Note:  If you see the following message,
 
+  ```
   **-bash: rbenv: command not found**
+  ```
 
   please continue to the next step.
 
