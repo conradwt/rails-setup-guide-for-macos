@@ -140,15 +140,13 @@ The purpose of this step by step tutorial is to provide a very simple example of
   Note:  Skip this step if you already have an account.
   ```
 
-22) create and edit Git configuration file
-
-  - create
+22) create Git configuration file
 
   ```
   $ cp sample.gitconfig ~/.gitconfig
   ```
 
-  - edit
+23) edit the Git configuration file
 
   ```
   $ atom ~/.gitconfig
@@ -169,7 +167,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     name = John Doe
     email = john.doe@example.com
 
-23) set up PostgreSQL Server
+24) set up PostgreSQL Server
 
   ```
   $ sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb
