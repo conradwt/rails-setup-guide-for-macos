@@ -140,20 +140,29 @@ The purpose of this step by step tutorial is to provide a very simple example of
   Note:  Skip this step if you already have an account.
   ```
 
-22) set the Git configuration  
+22) create and edit Git configuration file
+
+  - create
 
   ```
   $ cp sample.gitconfig ~/.gitconfig
   ```
 
-  Note:  Replace < TEXT > with your contact information.  For example,
+  - edit
 
-  replace:
+  ```
+  $ atom ~/.gitconfig
+  ```
+
+  Note: `atom` editor is being used but you can use any editor to make the
+        modifications to the `.gitconfig` file.  
+
+  change the text on the right side of the equal:
 
 	  name = <your firstname lastname>
 	  email = <your e-mail address>
 
-  with full name and e-mail
+  to the text for your `name` and `e-mail` that you're using for Github.com:
 
     e.g.
 
