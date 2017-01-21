@@ -29,8 +29,6 @@ sudo port install \
   makedepend \
   mcrypt \
   memcached \
-  nodejs-devel \
-  npm-devel \
   openssl \
   postgresql96 \
   postgresql96-server \
