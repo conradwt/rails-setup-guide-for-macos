@@ -9,21 +9,21 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 ## Installation Steps
 
-1) install Xcode from Mac App Store
+1) download and install Xcode from Mac App Store
 
   [Download Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12#)
 
-2) install the Xcode
+2) from the Terminal.app, install command line tools
 
   ```
   $ xcode-select --install
   ```
 
-3) install MacPorts for OS X
+3) download and install MacPorts for OS X
 
   [Download MacPorts](https://github.com/macports/macports-base/releases/download/v2.3.5/MacPorts-2.3.5-10.12-Sierra.pkg)
 
-4) install Node
+4) download and install Node
 
   [Download Node](https://nodejs.org/dist/v7.4.0/node-v7.4.0.pkg)
 
@@ -31,25 +31,19 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 6) open the Terminal.app
 
-7) from the Terminal.app, install command line tools
-
-  ```
-  $ xcode-select --install
-  ```
-
-8) clone this repository
+7) clone this repository
 
   ```
   $ git clone https://github.com/conradwt/rails-setup-guide-for-macos
   ```
 
-9) change directory to the cloned repository
+8) change directory to the cloned repository
 
   ```
   $ cd path/rails-setup-guide-for-macos
   ```
 
-10) remove existing
+9) remove existing
 
   ```
   $ mv ~/.bashrc ~/.bashrc.orig
@@ -64,7 +58,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
         e.g.  mv: rename .bashrc to .bashrc.orig: No such file or directory
 
-11) configure the .profile
+10) configure the .profile
 
   ```
   $ cp sample.profile $HOME/.profile
@@ -79,40 +73,40 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
   please continue to the next step.
 
-12) set the Git completion
+11) set the Git completion
 
   ```
   $ cp sample.git-completion.sh $HOME/.git-completion.sh
   ```
 
-13) install required ports from MacPorts
+12) install required ports from MacPorts
 
   ```
   $ chmod +x install-ports.sh
   $ ./install-ports.sh
   ```
 
-14) install RBenv
+13) install RBenv
 
   ```
   $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
   ```
 
-15) install all of the approved plugins RBenv plugins
+14) install all of the approved plugins RBenv plugins
 
   ```
   $ chmod +x install-rbenv-plugins.sh
   $ ./install-rbenv-plugins.sh
   ```
 
-16) install Ruby 2.3.3
+15) install Ruby 2.3.3
 
   ```
   $ rbenv install 2.3.3
   $ rbenv global 2.3.3
   ```
 
-17) install Ruby on Rails web development framework
+16) install Ruby on Rails web development framework
 
   ```
   $ gem install bundler
@@ -120,37 +114,37 @@ The purpose of this step by step tutorial is to provide a very simple example of
   $ rbenv rehash
   ```
 
-18) install Heroku Toolbelt
+17) install Heroku Toolbelt
 
   [Download Heroku Toolbelt](https://toolbelt.heroku.com)
 
-19) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
+18) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
 
-20) set the terminal
+19) set the terminal
 
   ```
   $ cp sample.terminal $HOME/.
   ```
 
-21) from the terminal menu, Shell -> Import, select sample.terminal file
+20) from the terminal menu, Shell -> Import, select sample.terminal file
 
   ```
   Terminal -> Preferences -> Settings, click the 'sample' profile on the left, click Default
   ```
 
-22) create a Github.com account
+21) create a Github.com account
 
   ```
   Note:  Skip this step if you already have an account.
   ```
 
-23) create Git configuration file
+22) create Git configuration file
 
   ```
   $ cp sample.gitconfig ~/.gitconfig
   ```
 
-24) edit the Git configuration file
+23) edit the Git configuration file
 
   ```
   $ atom ~/.gitconfig
@@ -171,7 +165,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     name = John Doe
     email = john.doe@example.com
 
-25) set up PostgreSQL Server
+24) set up PostgreSQL Server
 
   ```
   $ sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb
@@ -179,13 +173,13 @@ The purpose of this step by step tutorial is to provide a very simple example of
   $ sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'
   ```
 
-26) set PostgreSQL 96 as the default version
+25) set PostgreSQL 96 as the default version
 
   ```
   $ sudo port select postgresql postgresql96
   ```
 
-27) start the PostgreSQL 96 Server
+26) start the PostgreSQL 96 Server
 
   ```
   $ pgstart
