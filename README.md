@@ -23,29 +23,33 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
   [Download MacPorts](https://github.com/macports/macports-base/releases/download/v2.3.5/MacPorts-2.3.5-10.12-Sierra.pkg)
 
-4) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
+4) install Node
 
-5) open the Terminal.app
+  [Download Node](https://nodejs.org/dist/v7.4.0/node-v7.4.0.pkg)
 
-6) from the Terminal.app, install command line tools
+5) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
+
+6) open the Terminal.app
+
+7) from the Terminal.app, install command line tools
 
   ```
   $ xcode-select --install
   ```
 
-7) clone this repository
+8) clone this repository
 
   ```
   $ git clone https://github.com/conradwt/rails-setup-guide-for-macos
   ```
 
-8) change directory to the cloned repository
+9) change directory to the cloned repository
 
   ```
   $ cd path/rails-setup-guide-for-macos
   ```
 
-9) remove existing
+10) remove existing
 
   ```
   $ mv ~/.bashrc ~/.bashrc.orig
@@ -60,7 +64,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
         e.g.  mv: rename .bashrc to .bashrc.orig: No such file or directory
 
-10) configure the .profile
+11) configure the .profile
 
   ```
   $ cp sample.profile $HOME/.profile
@@ -75,40 +79,40 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
   please continue to the next step.
 
-11) set the Git completion
+12) set the Git completion
 
   ```
   $ cp sample.git-completion.sh $HOME/.git-completion.sh
   ```
 
-12) install required ports from MacPorts
+13) install required ports from MacPorts
 
   ```
   $ chmod +x install-ports.sh
   $ ./install-ports.sh
   ```
 
-13) install RBenv
+14) install RBenv
 
   ```
   $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
   ```
 
-14) install all of the approved plugins RBenv plugins
+15) install all of the approved plugins RBenv plugins
 
   ```
   $ chmod +x install-rbenv-plugins.sh
   $ ./install-rbenv-plugins.sh
   ```
 
-15) install Ruby 2.3.3
+16) install Ruby 2.3.3
 
   ```
   $ rbenv install 2.3.3
   $ rbenv global 2.3.3
   ```
 
-16) install Ruby on Rails web development framework
+17) install Ruby on Rails web development framework
 
   ```
   $ gem install bundler
@@ -116,37 +120,37 @@ The purpose of this step by step tutorial is to provide a very simple example of
   $ rbenv rehash
   ```
 
-17) install Heroku Toolbelt
+18) install Heroku Toolbelt
 
   [Download Heroku Toolbelt](https://toolbelt.heroku.com)
 
-18) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
+19) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
 
-19) set the terminal
+20) set the terminal
 
   ```
   $ cp sample.terminal $HOME/.
   ```
 
-20) from the terminal menu, Shell -> Import, select sample.terminal file
+21) from the terminal menu, Shell -> Import, select sample.terminal file
 
   ```
   Terminal -> Preferences -> Settings, click the 'sample' profile on the left, click Default
   ```
 
-21) create a Github.com account
+22) create a Github.com account
 
   ```
   Note:  Skip this step if you already have an account.
   ```
 
-22) create Git configuration file
+23) create Git configuration file
 
   ```
   $ cp sample.gitconfig ~/.gitconfig
   ```
 
-23) edit the Git configuration file
+24) edit the Git configuration file
 
   ```
   $ atom ~/.gitconfig
@@ -167,7 +171,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     name = John Doe
     email = john.doe@example.com
 
-24) set up PostgreSQL Server
+25) set up PostgreSQL Server
 
   ```
   $ sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb
@@ -175,13 +179,13 @@ The purpose of this step by step tutorial is to provide a very simple example of
   $ sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'
   ```
 
-25) set PostgreSQL 96 as the default version
+26) set PostgreSQL 96 as the default version
 
   ```
   $ sudo port select postgresql postgresql96
   ```
 
-26) start the PostgreSQL 96 Server
+27) start the PostgreSQL 96 Server
 
   ```
   $ pgstart
