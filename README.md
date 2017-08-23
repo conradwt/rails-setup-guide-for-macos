@@ -99,11 +99,11 @@ The purpose of this step by step tutorial is to provide a very simple example of
   $ ./install-rbenv-plugins.sh
   ```
 
-15) install Ruby 2.3.3
+15) install Ruby 2.4.1
 
   ```
-  $ rbenv install 2.3.3
-  $ rbenv global 2.3.3
+  $ rbenv install 2.4.1
+  $ rbenv global 2.4.1
   ```
 
 16) install Ruby on Rails web development framework
