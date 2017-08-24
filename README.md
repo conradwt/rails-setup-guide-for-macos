@@ -31,19 +31,8 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 6) open the Terminal.app
 
-7) clone this repository
 
-  ```
-  $ git clone https://github.com/conradwt/rails-setup-guide-for-macos
-  ```
-
-8) change directory to the cloned repository
-
-  ```
-  $ cd path/rails-setup-guide-for-macos
-  ```
-
-9) remove existing
+7) remove existing
 
   ```
   $ mv ~/.bashrc ~/.bashrc.orig
@@ -58,7 +47,47 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
         e.g.  mv: rename .bashrc to .bashrc.orig: No such file or directory
 
-10) configure the .profile
+8) clone this repository
+
+  ```
+  $ git clone https://github.com/conradwt/rails-setup-guide-for-macos
+  ```
+
+9) change directory to the cloned repository
+
+  ```
+  $ cd path/rails-setup-guide-for-macos
+  ```
+
+10) install RBenv
+
+  ```
+  $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+  ```
+
+11) install all of the approved plugins RBenv plugins
+
+  ```
+  $ chmod +x install-rbenv-plugins.sh
+  $ ./install-rbenv-plugins.sh
+  ```
+
+12) install Ruby 2.4.1
+
+  ```
+  $ rbenv install 2.4.1
+  $ rbenv global 2.4.1
+  ```
+
+13) install Ruby on Rails web development framework
+
+  ```
+  $ gem install bundler
+  $ gem install rails
+  $ rbenv rehash
+  ```
+
+14) configure the .profile
 
   ```
   $ cp sample.profile $HOME/.profile
@@ -73,45 +102,17 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
   please continue to the next step.
 
-11) set the Git completion
+15) set the Git completion
 
   ```
   $ cp sample.git-completion.sh $HOME/.git-completion.sh
   ```
 
-12) install required ports from MacPorts
+16) install required ports from MacPorts
 
   ```
   $ chmod +x install-ports.sh
   $ ./install-ports.sh
-  ```
-
-13) install RBenv
-
-  ```
-  $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-  ```
-
-14) install all of the approved plugins RBenv plugins
-
-  ```
-  $ chmod +x install-rbenv-plugins.sh
-  $ ./install-rbenv-plugins.sh
-  ```
-
-15) install Ruby 2.4.1
-
-  ```
-  $ rbenv install 2.4.1
-  $ rbenv global 2.4.1
-  ```
-
-16) install Ruby on Rails web development framework
-
-  ```
-  $ gem install bundler
-  $ gem install rails
-  $ rbenv rehash
   ```
 
 17) install Heroku Toolbelt
