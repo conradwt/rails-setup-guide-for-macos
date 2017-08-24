@@ -32,7 +32,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 6) open the Terminal.app
 
 
-7) remove existing
+7) remove existing environment initialization files
 
   ```
   $ mv ~/.bashrc ~/.bashrc.orig
