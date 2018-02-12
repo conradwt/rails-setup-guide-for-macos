@@ -72,18 +72,18 @@ The purpose of this step by step tutorial is to provide a very simple example of
   $ ./install-rbenv-plugins.sh
   ```
 
-12) install Ruby 2.4.1
+12) install Ruby 2.4.3
 
   ```
-  $ rbenv install 2.4.1
-  $ rbenv global 2.4.1
+  $ rbenv install 2.4.3
+  $ rbenv global 2.4.3
   ```
 
-13) install Ruby on Rails web development framework
+13) install Rails 5.1.4
 
   ```
   $ gem install bundler
-  $ gem install rails
+  $ gem install rails -v 5.1.4
   $ rbenv rehash
   ```
 
