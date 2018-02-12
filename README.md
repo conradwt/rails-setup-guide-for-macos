@@ -5,7 +5,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 # Software Requirements
 
-- macOS 10.12.4 or later
+- macOS 10.13.3 or later
 
 ## Installation Steps
 
@@ -169,18 +169,18 @@ The purpose of this step by step tutorial is to provide a very simple example of
 24) set up PostgreSQL Server
 
   ```
-  $ sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb
-  $ sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb
-  $ sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'
+  $ sudo mkdir -p /opt/local/var/db/postgresql10/defaultdb
+  $ sudo chown postgres:postgres /opt/local/var/db/postgresql10/defaultdb
+  $ sudo su postgres -c '/opt/local/lib/postgresql10/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'
   ```
 
 25) set PostgreSQL 96 as the default version
 
   ```
-  $ sudo port select postgresql postgresql96
+  $ sudo port select postgresql postgresql10
   ```
 
-26) start the PostgreSQL 96 Server
+26) start the PostgreSQL 10 Server
 
   ```
   $ pgstart
@@ -208,4 +208,4 @@ This repository is released under the [MIT License](http://www.opensource.org/li
 
 ## Copyright
 
-&copy; Copyright 2014 - 2017 Conrad Taylor. All Rights Reserved.
+&copy; Copyright 2014 - 2018 Conrad Taylor. All Rights Reserved.
