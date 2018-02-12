@@ -21,11 +21,11 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 3) download and install MacPorts for OS X
 
-  [Download MacPorts](https://github.com/macports/macports-base/releases/download/v2.3.5/MacPorts-2.3.5-10.12-Sierra.pkg)
+  [Download MacPorts](https://github.com/macports/macports-base/releases/download/v2.4.2/MacPorts-2.4.2-10.13-HighSierra.pkg)
 
 4) download and install Node
 
-  [Download Node](https://nodejs.org/dist/v7.4.0/node-v7.4.0.pkg)
+  [Download Node](https://nodejs.org/dist/v9.5.0/node-v9.5.0.pkg)
 
 5) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
 
