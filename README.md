@@ -37,6 +37,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
   $ make
   $ sudo make install
   $ make distclean
+  $ sudo port selfupdate
   ```
   
 4) download and install Node
