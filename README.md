@@ -19,10 +19,26 @@ The purpose of this step by step tutorial is to provide a very simple example of
   $ xcode-select --install
   ```
 
-3) download and install MacPorts for OS X
+3) download and install MacPorts for macOS
+
+  macOS 10.13:
 
   [Download MacPorts](https://github.com/macports/macports-base/releases/download/v2.4.2/MacPorts-2.4.2-10.13-HighSierra.pkg)
-
+  
+  macOS > 10.13:
+  
+  ```
+  $ WORKING_DIRECTORY=${HOME}/macports.dir/projects/macports
+  $ mkdir -p ${WORKING_DIRECTORY}
+  $ cd ${WORKING_DIRECTORY}
+  $ git clone https://github.com/macports/macports-base.git
+  $ cd ${WORKING_DIRECTORY}/macports-base
+  $ ./configure --enable-readline
+  $ make
+  $ sudo make install
+  $ make distclean
+  ```
+  
 4) download and install Node
 
   [Download Node](https://nodejs.org/dist/v10.5.0/node-v10.5.0.pkg)
@@ -30,7 +46,6 @@ The purpose of this step by step tutorial is to provide a very simple example of
 5) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
 
 6) open the Terminal.app
-
 
 7) remove existing environment initialization files
 
