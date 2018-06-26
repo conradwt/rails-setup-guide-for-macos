@@ -25,7 +25,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 4) download and install Node
 
-  [Download Node](https://nodejs.org/dist/v9.5.0/node-v9.5.0.pkg)
+  [Download Node](https://nodejs.org/dist/v10.5.0/node-v10.5.0.pkg)
 
 5) open Disk Utility, select MacIntosh HD, click Repair Disk Permissions
 
@@ -72,18 +72,18 @@ The purpose of this step by step tutorial is to provide a very simple example of
   $ ./install-rbenv-plugins.sh
   ```
 
-12) install Ruby 2.4.3
+12) install Ruby 2.5.1
 
   ```
-  $ rbenv install 2.4.3
-  $ rbenv global 2.4.3
+  $ rbenv install 2.5.1
+  $ rbenv global 2.5.1
   ```
 
-13) install Rails 5.1.4
+13) install Rails 5.2.0
 
   ```
   $ gem install bundler
-  $ gem install rails -v 5.1.4
+  $ gem install rails -v 5.2.0
   $ rbenv rehash
   ```
 
