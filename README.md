@@ -175,18 +175,19 @@ The purpose of this step by step tutorial is to provide a very simple example of
     Terminal -> Preferences -> Settings, click the 'sample' profile on the left, click Default
     ```
 
-21. in Terminal.app, set up PostgreSQL Server
+21. in Terminal.app, set PostgreSQL 10 as the default version
+
+    ```bash
+    sudo port select postgresql postgresql10
+    ```
+    
+
+22. in Terminal.app, set up PostgreSQL Server
 
     ```bash
     sudo mkdir -p /opt/local/var/db/postgresql10/defaultdb
     sudo chown postgres:postgres /opt/local/var/db/postgresql10/defaultdb
     sudo su postgres -c '/opt/local/lib/postgresql10/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'
-    ```
-
-22. in Terminal.app, set PostgreSQL 10 as the default version
-
-    ```bash
-    sudo port select postgresql postgresql10
     ```
 
 23. in Terminal.app, start the PostgreSQL 10 Server
