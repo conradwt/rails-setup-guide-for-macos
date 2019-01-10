@@ -159,7 +159,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     rbenv rehash
     ```
 
-18. install Heroku Toolbelt
+18. download and install Heroku Toolbelt
 
     [Download Heroku Toolbelt](https://toolbelt.heroku.com)
 
