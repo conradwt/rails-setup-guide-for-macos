@@ -187,7 +187,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ```bash
     sudo mkdir -p /opt/local/var/db/postgresql10/defaultdb
     sudo chown postgres:postgres /opt/local/var/db/postgresql10/defaultdb
-    sudo su postgres -c '/opt/local/lib/postgresql10/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'
+    sudo su postgres -c '/opt/local/lib/postgresql10/bin/initdb -D /opt/local/var/db/postgresql10/defaultdb'
     ```
 
 23. in Terminal.app, start the PostgreSQL 10 Server
