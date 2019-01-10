@@ -106,8 +106,8 @@ alias show_hidden="defaults write com.apple.finder AppleShowAllFiles TRUE && kil
 alias hide_hidden="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
 
 # PostgreSQL aliases.
-alias pgstart='sudo port load postgresql96-server'
-alias pgstop='sudo port unload postgresql96-server'
+alias pgstart='sudo port load postgresql10-server'
+alias pgstop='sudo port unload postgresql10-server'
 
 # AnnotatedModels aliases.
 alias schemize='bundle exec annotate --position before --exclude tests,fixtures'
