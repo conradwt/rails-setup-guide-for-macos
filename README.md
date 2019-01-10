@@ -21,11 +21,11 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 3) download and install MacPorts for macOS
 
-  macOS 10.13:
+  macOS 10.14:
 
-  [Download MacPorts](https://github.com/macports/macports-base/releases/download/v2.4.2/MacPorts-2.4.2-10.13-HighSierra.pkg)
+  [Download MacPorts](https://distfiles.macports.org/MacPorts/MacPorts-2.5.4-10.14-Mojave.pkg)
   
-  macOS > 10.13:
+  macOS > 10.14:
   
   ```
   $ WORKING_DIRECTORY=${HOME}/macports.dir/projects/macports
