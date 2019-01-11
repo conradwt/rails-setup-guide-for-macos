@@ -169,7 +169,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     cp sample.terminal $HOME/.
     ```
 
-20. from the Terminal.app menu, Shell -> Import, select sample.terminal file
+20. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
 
     ```text
     Terminal -> Preferences -> Settings, click the 'sample' profile on the left, click Default
