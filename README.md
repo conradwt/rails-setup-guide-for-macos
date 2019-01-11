@@ -180,9 +180,8 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ```bash
     sudo port select postgresql postgresql10
     ```
-    
 
-22. in Terminal.app, set up PostgreSQL Server
+22) in Terminal.app, set up PostgreSQL Server
 
     ```bash
     sudo mkdir -p /opt/local/var/db/postgresql10/defaultdb
@@ -190,7 +189,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     sudo su postgres -c '/opt/local/lib/postgresql10/bin/initdb -D /opt/local/var/db/postgresql10/defaultdb'
     ```
 
-23. in Terminal.app, start the PostgreSQL 10 Server
+23) in Terminal.app, start the PostgreSQL 10 Server
 
     ```bash
     pgstart
@@ -198,7 +197,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 ## Support
 
-Bug reports and feature requests can be filed for the <add project here> project here:
+Bug reports and feature requests can be filed for the `rails-setup-guide-for-macos` project here:
 
 - [File Bug Reports and Features](https://github.com/conradwt/rails-setup-guide-for-macos/issues)
 
