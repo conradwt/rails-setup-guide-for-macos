@@ -4,7 +4,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 # Software Requirements
 
-- macOS 10.14.2 or later
+- macOS 10.14.3 or later
 
 ## Installation Steps
 
@@ -147,15 +147,15 @@ The purpose of this step by step tutorial is to provide a very simple example of
 16. in Terminal.app, install Ruby
 
     ```bash
-    rbenv install 2.5.3
-    rbenv global 2.5.3
+    rbenv install 2.6.2
+    rbenv global 2.6.2
     ```
 
 17. in Terminal.app, install Rails
 
     ```bash
     gem install bundler
-    gem install rails -v 5.2.2
+    gem install rails
     rbenv rehash
     ```
 
