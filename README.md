@@ -160,7 +160,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ```bash
     gem install bundler
     gem install rails
-    gem install robocop
+    gem install rubocop
     rbenv rehash
     ```
 
