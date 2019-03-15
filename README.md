@@ -21,7 +21,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 3.  download and install VS Code Insiders
 
     ```text
-    https://code.visualstudio.com/docs/?dv=osx&build=insiders
+    [VS Code Insiders](https://code.visualstudio.com/docs/?dv=osx&build=insiders)
     ```
 
 4.  download and install MacPorts for macOS
