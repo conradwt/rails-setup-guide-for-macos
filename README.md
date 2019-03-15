@@ -20,9 +20,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     
 3.  download and install VS Code Insiders
 
-    ```text
-    [VS Code Insiders](https://code.visualstudio.com/docs/?dv=osx&build=insiders)
-    ```
+    [Download VS Code Insiders](https://code.visualstudio.com/docs/?dv=osx&build=insiders)
 
 4.  download and install MacPorts for macOS
 
@@ -83,7 +81,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     e.g. mv: rename .bashrc to .bashrc.orig: No such file or directory
 
-10.  in Terminal.app, configure the .profile
+10. in Terminal.app, configure the .profile
 
     ```bash
     cp sample.profile $HOME/.profile
