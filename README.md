@@ -17,8 +17,14 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ```bash
     xcode-select --install
     ```
+    
+3.  download and install VS Code Insiders
 
-3.  download and install MacPorts for macOS
+    ```text
+    https://code.visualstudio.com/docs/?dv=osx&build=insiders
+    ```
+
+4.  download and install MacPorts for macOS
 
     macOS 10.14:
 
@@ -39,30 +45,30 @@ The purpose of this step by step tutorial is to provide a very simple example of
     sudo port selfupdate
     ```
 
-4.  in Terminal.app, clone this repository
+5.  in Terminal.app, clone this repository
 
     ```bash
     git clone https://github.com/conradwt/rails-setup-guide-for-macos
     ```
 
-5.  in Terminal.app, change directory to the cloned repository
+6.  in Terminal.app, change directory to the cloned repository
 
     ```bash
     cd path/to/rails-setup-guide-for-macos
     ```
 
-6.  in Terminal.app, install required ports from MacPorts
+7.  in Terminal.app, install required ports from MacPorts
 
     ```bash
     chmod +x install-ports.sh
     ./install-ports.sh
     ```
 
-7.  download and install Node
+8.  download and install Node
 
     [Download Node](https://nodejs.org/dist/v10.5.0/node-v10.5.0.pkg)
 
-8.  in Terminal.app, remove existing environment initialization files
+9.  in Terminal.app, remove existing environment initialization files
 
     ```bash
     mv ~/.bashrc ~/.bashrc.orig
@@ -77,7 +83,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     e.g. mv: rename .bashrc to .bashrc.orig: No such file or directory
 
-9.  in Terminal.app, configure the .profile
+10.  in Terminal.app, configure the .profile
 
     ```bash
     cp sample.profile $HOME/.profile
@@ -92,25 +98,25 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     Please continue to the next step.
 
-10. in Terminal.app, set the Git completion
+11. in Terminal.app, set the Git completion
 
     ```bash
     cp sample.git-completion.sh $HOME/.git-completion.sh
     ```
 
-11. in Terminal.app, create a Github.com account
+12. in Terminal.app, create a Github.com account
 
     ```text
     Note:  Skip this step if you already have an account.
     ```
 
-12. in Terminal.app, create Git configuration file
+13. in Terminal.app, create Git configuration file
 
     ```bash
     cp sample.gitconfig ~/.gitconfig
     ```
 
-13. in Terminal.app, edit the Git configuration file
+14. in Terminal.app, edit the Git configuration file
 
     ```bash
     code-insiders ~/.gitconfig
@@ -131,57 +137,58 @@ The purpose of this step by step tutorial is to provide a very simple example of
         name = John Doe
         email = john.doe@example.com
 
-14. in Terminal.app, install RBenv
+15. in Terminal.app, install RBenv
 
     ```bash
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
     ```
 
-15. in Terminal.app, install all of the approved plugins RBenv plugins
+16. in Terminal.app, install all of the approved plugins RBenv plugins
 
     ```bash
     chmod +x install-rbenv-plugins.sh
     ./install-rbenv-plugins.sh
     ```
 
-16. in Terminal.app, install Ruby
+17. in Terminal.app, install Ruby
 
     ```bash
     rbenv install 2.6.2
     rbenv global 2.6.2
     ```
 
-17. in Terminal.app, install Rails
+18. in Terminal.app, install Rails
 
     ```bash
     gem install bundler
     gem install rails
+    gem install robocop
     rbenv rehash
     ```
 
-18. download and install Heroku Toolbelt
+19. download and install Heroku Toolbelt
 
     [Download Heroku Toolbelt](https://toolbelt.heroku.com)
 
-19. in Terminal.app, set the terminal
+20. in Terminal.app, set the terminal
 
     ```bash
     cp sample.terminal $HOME/.
     ```
 
-20. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
+21. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
 
     ```text
     Terminal -> Preferences -> Settings, click the 'sample' profile on the left, click Default
     ```
 
-21. in Terminal.app, set PostgreSQL 10 as the default version
+22. in Terminal.app, set PostgreSQL 10 as the default version
 
     ```bash
     sudo port select postgresql postgresql10
     ```
 
-22) in Terminal.app, set up PostgreSQL Server
+23. in Terminal.app, set up PostgreSQL Server
 
     ```bash
     sudo mkdir -p /opt/local/var/db/postgresql10/defaultdb
@@ -189,7 +196,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     sudo su postgres -c '/opt/local/lib/postgresql10/bin/initdb -D /opt/local/var/db/postgresql10/defaultdb'
     ```
 
-23) in Terminal.app, start the PostgreSQL 10 Server
+24. in Terminal.app, start the PostgreSQL 10 Server
 
     ```bash
     pgstart
