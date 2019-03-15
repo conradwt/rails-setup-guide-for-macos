@@ -52,7 +52,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 6.  in Terminal.app, change directory to the cloned repository
 
     ```bash
-    cd path/to/rails-setup-guide-for-macos
+    cd rails-setup-guide-for-macos
     ```
 
 7.  in Terminal.app, install required ports from MacPorts
