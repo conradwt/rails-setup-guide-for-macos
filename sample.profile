@@ -10,20 +10,21 @@ export MANPATH=/opt/local/share/man:${MANPATH}
 export MANPATH=/usr/local/share/man/man1:${MANPATH}
 
 # set EDITOR environment variable.
-export EDITOR='emacs'
+export EDITOR='code-insiders'
 export VISUAL=${EDITOR}
 
 # set SVN_EDITOR environment variable.
 export SVN_EDITOR=${EDITOR}
 
 # set GIT_EDITOR environment variable.
-export GIT_EDITOR='emacs'
+export GIT_EDITOR=${EDITOR}
 
 # set TEXEDIT environment variable.
-export TEXEDIT='emacs +%d "%s"'
+# export TEXEDIT='emacs +%d "%s"'
+export TEXEDIT='code-insiders -g $2:$3'
 
 # set LESSEDIT environment variable.
-export LESSEDIT='emacs -nw'
+export LESSEDIT='code-insiders -nw'
 
 # set DISPLAY environment variable.
 export DISPLAY=:0.0
@@ -111,6 +112,9 @@ alias pgstop='sudo port unload postgresql10-server'
 
 # AnnotatedModels aliases.
 alias schemize='bundle exec annotate --position before --exclude tests,fixtures'
+
+# set Visual Studio Code aliases.
+alias c='code-insiders'
 
 # Set GIT command completion.
 source ~/.git-completion.sh
