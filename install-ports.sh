@@ -30,8 +30,8 @@ sudo port install \
   mcrypt \
   memcached \
   openssl \
-  postgresql10 \
-  postgresql10-server \
+  postgresql11 \
+  postgresql11-server \
   postgresql_select \
   readline \
   sqlite3 \
