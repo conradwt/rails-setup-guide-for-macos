@@ -64,7 +64,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 8.  download and install Node
 
-    [Download Node](https://nodejs.org/dist/v10.5.0/node-v10.5.0.pkg)
+    [Download Node](https://nodejs.org/dist/v11.12.0/node-v11.12.0.pkg)
 
 9.  in Terminal.app, remove existing environment initialization files
 
@@ -108,10 +108,11 @@ The purpose of this step by step tutorial is to provide a very simple example of
     Note:  Skip this step if you already have an account.
     ```
 
-13. in Terminal.app, create Git configuration file
+13. in Terminal.app, create Git configuration and global files
 
     ```bash
     cp sample.gitconfig ~/.gitconfig
+    cp sample.gitignore_global ~/.gitignore_global
     ```
 
 14. in Terminal.app, edit the Git configuration file
@@ -122,18 +123,30 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     Note: `code-insiders` editor is being used but you can use any editor to make the
     modifications to the `.gitconfig` file.
+    
+     - change `excludesfiles` setting:
 
-    change the text on the right side of the equal:
+      ```text
+      excludesfile = /Users/<your user name>/.gitignore_global
+      ```
 
-          name = <your firstname lastname>
-          email = <your e-mail address>
+      Note: `<your user name>` should be replaced with your actual user name within Ubuntu.
 
-    to the text for your `name` and `e-mail` that you're using for Github.com:
+    - change name and email address settings
 
-        e.g.
+      ```text
+      name = <your firstname lastname>
+      email = <your e-mail address>
+      ```
 
-        name = John Doe
-        email = john.doe@example.com
+      to the text for your `name` and `e-mail` that you're using for Github.com:
+
+      e.g.
+
+      ```text
+      name = John Doe
+      email = john.doe@example.com
+      ```
 
 15. in Terminal.app, install RBenv
 
