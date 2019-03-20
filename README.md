@@ -236,7 +236,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     
       - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
       
-        Note: Please select Linux link at the top of the page.
+        Note: Please select Mac link at the top of the page.
       
 26. Add SSH public key to Github
 
