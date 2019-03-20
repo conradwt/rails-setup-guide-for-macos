@@ -199,6 +199,35 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ```bash
     pgstart
     ```
+    
+25. create and/or setup SSH keys
+
+    - have existing ssh keys
+
+      - create SSH folder in home directory
+
+          ```bash
+           mkdir -p $HOME/.ssh
+          ```
+          
+      - copy your SSH keys to the above folder
+      
+      - set permissions
+    
+        ```bash
+        chmod 700 $HOME/.ssh
+        chmod 600 $HOME/id_rsa
+        chmod 644 $HOME/id_rsa.pub
+        ```
+    - doesn't have existing ssh keys
+    
+      - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+      
+        Note: Please select Linux link at the top of the page.
+      
+26. Add SSH public key to Github
+
+    [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
 ## Support
 
