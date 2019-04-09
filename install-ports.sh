@@ -13,11 +13,7 @@ sudo port install \
   gawk \
   gettext \
   git +bash_completion \
-  google-perftools \
-  gperf \
-  gsed \
   htop \
-  httperf \
   httpie \
   ImageMagick \
   libgcrypt \
