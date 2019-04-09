@@ -61,12 +61,32 @@ The purpose of this step by step tutorial is to provide a very simple example of
     chmod +x install-ports.sh
     ./install-ports.sh
     ```
+    
+8. in Terminal.app, set PostgreSQL 11 as the default version
 
-8.  download and install Node
+    ```bash
+    sudo port select postgresql postgresql11
+    ```
+
+9. in Terminal.app, set up PostgreSQL Server
+
+    ```bash
+    sudo mkdir -p /opt/local/var/db/postgresql11/defaultdb
+    sudo chown postgres:postgres /opt/local/var/db/postgresql11/defaultdb
+    sudo su postgres -c '/opt/local/lib/postgresql11/bin/initdb -D /opt/local/var/db/postgresql11/defaultdb'
+    ```
+
+10. in Terminal.app, start the PostgreSQL 10 Server
+
+    ```bash
+    pgstart
+    ```
+
+11.  download and install Node
 
     [Download Node](https://nodejs.org/dist/v11.12.0/node-v11.12.0.pkg)
 
-9.  in Terminal.app, remove existing environment initialization files
+12.  in Terminal.app, remove existing environment initialization files
 
     ```bash
     mv ~/.bashrc ~/.bashrc.orig
@@ -81,7 +101,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     e.g. mv: rename .bashrc to .bashrc.orig: No such file or directory
 
-10. in Terminal.app, configure the .profile
+13. in Terminal.app, configure the .profile
 
     ```bash
     cp sample.profile $HOME/.profile
@@ -96,26 +116,26 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     Please continue to the next step.
 
-11. in Terminal.app, set the Git completion
+14. in Terminal.app, set the Git completion
 
     ```bash
     cp sample.git-completion.sh $HOME/.git-completion.sh
     ```
 
-12. in Terminal.app, create a Github.com account
+15. in Terminal.app, create a Github.com account
 
     ```text
     Note:  Skip this step if you already have an account.
     ```
 
-13. in Terminal.app, create Git configuration and global files
+16. in Terminal.app, create Git configuration and global files
 
     ```bash
     cp sample.gitconfig ~/.gitconfig
     cp sample.gitignore_global ~/.gitignore_global
     ```
 
-14. in Terminal.app, edit .gitconfig file
+17. in Terminal.app, edit .gitconfig file
 
     - change `excludesfile` setting:
 
@@ -132,69 +152,50 @@ The purpose of this step by step tutorial is to provide a very simple example of
       git config --global user.email johndoe@example.com
       ```
 
-15. in Terminal.app, install RBenv
+18. in Terminal.app, install RBenv
 
     ```bash
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
     ```
 
-16. in Terminal.app, install all of the approved plugins RBenv plugins
+19. in Terminal.app, install all of the approved plugins RBenv plugins
 
     ```bash
     chmod +x install-rbenv-plugins.sh
     ./install-rbenv-plugins.sh
     ```
 
-17. in Terminal.app, install Ruby
+20. in Terminal.app, install Ruby
 
     ```bash
     rbenv install 2.6.2
     rbenv global 2.6.2
     ```
 
-18. in Terminal.app, install Rails
+21. in Terminal.app, install Rails
 
     ```bash
-    gem install bundler
+    gem install bundler -v 1.17.3
     gem install rails
     gem install rubocop
+    gem install pg
     rbenv rehash
     ```
 
-19. download and install Heroku Toolbelt
+22. download and install Heroku Toolbelt
 
     [Download Heroku Toolbelt](https://toolbelt.heroku.com)
 
-20. in Terminal.app, set the terminal
+23. in Terminal.app, set the terminal
 
     ```bash
     cp sample.terminal $HOME/.
     ```
 
-21. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
+24. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
 
     ```text
     Terminal -> Preferences -> Settings, click the 'sample' profile on the left, click Default
-    ```
-
-22. in Terminal.app, set PostgreSQL 11 as the default version
-
-    ```bash
-    sudo port select postgresql postgresql11
-    ```
-
-23. in Terminal.app, set up PostgreSQL Server
-
-    ```bash
-    sudo mkdir -p /opt/local/var/db/postgresql11/defaultdb
-    sudo chown postgres:postgres /opt/local/var/db/postgresql11/defaultdb
-    sudo su postgres -c '/opt/local/lib/postgresql11/bin/initdb -D /opt/local/var/db/postgresql11/defaultdb'
-    ```
-
-24. in Terminal.app, start the PostgreSQL 10 Server
-
-    ```bash
-    pgstart
     ```
 
 25. create and/or setup SSH keys
