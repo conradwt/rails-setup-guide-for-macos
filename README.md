@@ -61,14 +61,14 @@ The purpose of this step by step tutorial is to provide a very simple example of
     chmod +x install-ports.sh
     ./install-ports.sh
     ```
-    
-8. in Terminal.app, set PostgreSQL 11 as the default version
+
+8.  in Terminal.app, set PostgreSQL 11 as the default version
 
     ```bash
     sudo port select postgresql postgresql11
     ```
 
-9. in Terminal.app, set up PostgreSQL Server
+9.  in Terminal.app, set up PostgreSQL Server
 
     ```bash
     sudo mkdir -p /opt/local/var/db/postgresql11/defaultdb
@@ -82,11 +82,11 @@ The purpose of this step by step tutorial is to provide a very simple example of
     pgstart
     ```
 
-11.  download and install Node
+11. download and install Node
 
     [Download Node](https://nodejs.org/dist/v11.14.0/node-v11.14.0.pkg)
 
-12.  in Terminal.app, remove existing environment initialization files
+12. in Terminal.app, remove existing environment initialization files
 
     ```bash
     mv ~/.bashrc ~/.bashrc.orig
