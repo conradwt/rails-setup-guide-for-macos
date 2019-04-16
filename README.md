@@ -84,7 +84,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 11.  download and install Node
 
-    [Download Node](https://nodejs.org/dist/v11.12.0/node-v11.12.0.pkg)
+    [Download Node](https://nodejs.org/dist/v11.14.0/node-v11.14.0.pkg)
 
 12.  in Terminal.app, remove existing environment initialization files
 
