@@ -175,7 +175,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 21. in Terminal.app, install Rails
 
     ```bash
-    gem install bundler -v 1.17.3
+    gem install bundler -v=1.17.3
     gem install rails
     gem install rubocop
     gem install pg
