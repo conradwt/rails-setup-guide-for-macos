@@ -186,19 +186,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     [Download Heroku Toolbelt](https://toolbelt.heroku.com)
 
-23. in Terminal.app, set the terminal
-
-    ```bash
-    cp sample.terminal $HOME/.
-    ```
-
-24. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
-
-    ```text
-    Terminal -> Preferences -> Settings, click the 'sample' profile on the left, click Default
-    ```
-
-25. create and/or setup SSH keys
+23. create and/or setup SSH keys
 
     - have existing ssh keys
 
@@ -224,9 +212,21 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
         Note: Please select Mac link at the top of the page.
 
-26. Add SSH public key to Github
+24. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
+
+25. in Terminal.app, set the terminal
+
+    ```bash
+    cp sample.terminal $HOME/.
+    ```
+
+26. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
+
+    ```text
+    Terminal -> Preferences -> Profiles, select the 'sample' profile in the left sidebar, click Default at the bottom of the window
+    ```
 
 ## Support
 
