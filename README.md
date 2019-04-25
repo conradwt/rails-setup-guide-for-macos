@@ -21,8 +21,15 @@ The purpose of this step by step tutorial is to provide a very simple example of
 3.  download and install VS Code Insiders
 
     [Download VS Code Insiders](https://code.visualstudio.com/docs/?dv=osx&build=insiders)
+    
+4.  install VS Code Extensions
 
-4.  download and install MacPorts for macOS
+    ```bash
+    code-insiders --install-extension misogi.ruby-rubocop
+    code-insiders --install-extension rebornix.ruby
+    ```
+
+5.  download and install MacPorts for macOS
 
     macOS 10.14:
 
@@ -43,32 +50,32 @@ The purpose of this step by step tutorial is to provide a very simple example of
     sudo port selfupdate
     ```
 
-5.  in Terminal.app, clone this repository
+6.  in Terminal.app, clone this repository
 
     ```bash
     git clone https://github.com/conradwt/rails-setup-guide-for-macos
     ```
 
-6.  in Terminal.app, change directory to the cloned repository
+7.  in Terminal.app, change directory to the cloned repository
 
     ```bash
     cd rails-setup-guide-for-macos
     ```
 
-7.  in Terminal.app, install required ports from MacPorts
+8.  in Terminal.app, install required ports from MacPorts
 
     ```bash
     chmod +x install-ports.sh
     ./install-ports.sh
     ```
 
-8.  in Terminal.app, set PostgreSQL 11 as the default version
+9.  in Terminal.app, set PostgreSQL 11 as the default version
 
     ```bash
     sudo port select postgresql postgresql11
     ```
 
-9.  in Terminal.app, set up PostgreSQL Server
+10.  in Terminal.app, set up PostgreSQL Server
 
     ```bash
     sudo mkdir -p /opt/local/var/db/postgresql11/defaultdb
@@ -76,17 +83,17 @@ The purpose of this step by step tutorial is to provide a very simple example of
     sudo su postgres -c '/opt/local/lib/postgresql11/bin/initdb -D /opt/local/var/db/postgresql11/defaultdb'
     ```
 
-10. in Terminal.app, start the PostgreSQL 10 Server
+11. in Terminal.app, start the PostgreSQL 10 Server
 
     ```bash
     pgstart
     ```
 
-11. download and install Node
+12. download and install Node
 
     [Download Node](https://nodejs.org/dist/v11.14.0/node-v11.14.0.pkg)
 
-12. in Terminal.app, remove existing environment initialization files
+13. in Terminal.app, remove existing environment initialization files
 
     ```bash
     mv ~/.bashrc ~/.bashrc.orig
@@ -101,7 +108,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     e.g. mv: rename .bashrc to .bashrc.orig: No such file or directory
 
-13. in Terminal.app, configure the .profile
+14. in Terminal.app, configure the .profile
 
     ```bash
     cp sample.profile $HOME/.profile
@@ -116,26 +123,26 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     Please continue to the next step.
 
-14. in Terminal.app, set the Git completion
+15. in Terminal.app, set the Git completion
 
     ```bash
     cp sample.git-completion.sh $HOME/.git-completion.sh
     ```
 
-15. in Terminal.app, create a Github.com account
+16. in Terminal.app, create a Github.com account
 
     ```text
     Note:  Skip this step if you already have an account.
     ```
 
-16. in Terminal.app, create Git configuration and global files
+17. in Terminal.app, create Git configuration and global files
 
     ```bash
     cp sample.gitconfig ~/.gitconfig
     cp sample.gitignore_global ~/.gitignore_global
     ```
 
-17. in Terminal.app, edit .gitconfig file
+18. in Terminal.app, edit .gitconfig file
 
     - change `excludesfile` setting:
 
@@ -152,27 +159,27 @@ The purpose of this step by step tutorial is to provide a very simple example of
       git config --global user.email johndoe@example.com
       ```
 
-18. in Terminal.app, install RBenv
+19. in Terminal.app, install RBenv
 
     ```bash
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
     ```
 
-19. in Terminal.app, install all of the approved plugins RBenv plugins
+20. in Terminal.app, install all of the approved plugins RBenv plugins
 
     ```bash
     chmod +x install-rbenv-plugins.sh
     ./install-rbenv-plugins.sh
     ```
 
-20. in Terminal.app, install Ruby
+21. in Terminal.app, install Ruby
 
     ```bash
     rbenv install 2.6.3
     rbenv global 2.6.3
     ```
 
-21. in Terminal.app, install Rails
+22. in Terminal.app, install Rails
 
     ```bash
     gem install bundler -v=1.17.3
@@ -181,11 +188,11 @@ The purpose of this step by step tutorial is to provide a very simple example of
     rbenv rehash
     ```
 
-22. download and install Heroku Toolbelt
+23. download and install Heroku Toolbelt
 
     [Download Heroku Toolbelt](https://toolbelt.heroku.com)
 
-23. create and/or setup SSH keys
+24. create and/or setup SSH keys
 
     - have existing ssh keys
 
@@ -211,17 +218,17 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
         Note: Please select Mac link at the top of the page.
 
-24. Add SSH public key to Github
+25. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-25. in Terminal.app, set the terminal
+26. in Terminal.app, set the terminal
 
     ```bash
     cp sample.terminal $HOME/.
     ```
 
-26. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
+27. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
 
     ```text
     Terminal -> Preferences -> Profiles, select the 'sample' profile in the left sidebar, click Default at the bottom of the window
