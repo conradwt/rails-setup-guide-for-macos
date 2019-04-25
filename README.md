@@ -24,7 +24,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 4.  install VS Code Insiders command line interface (CLI)
 
-    - in VS Code Insider.app, type
+    - in VS Code Insiders.app, type
 
       ```text
       Command Shift P
