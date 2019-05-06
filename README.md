@@ -49,26 +49,26 @@ The purpose of this step by step tutorial is to provide a very simple example of
     code-insiders --install-extension rebornix.ruby
     ```
 
-6.  download and install MacPorts for macOS
+6.  download and/or install MacPorts version appropriate for your macOS version
 
-    using macOS >= 10.14.* and < 10.15.*:
+    - using macOS >= 10.14 and < 10.15
 
-    [Download MacPorts](https://distfiles.macports.org/MacPorts/MacPorts-2.5.4-10.14-Mojave.pkg)
+      [Download MacPorts](https://distfiles.macports.org/MacPorts/MacPorts-2.5.4-10.14-Mojave.pkg)
 
-    using macOS >= 10.15.* and < 10.16.*:
+    - using macOS >= 10.15 and < 10.16
 
-    ```bash
-    WORKING_DIRECTORY=${HOME}/macports.dir/projects/macports
-    mkdir -p ${WORKING_DIRECTORY}
-    cd ${WORKING_DIRECTORY}
-    git clone https://github.com/macports/macports-base.git
-    cd ${WORKING_DIRECTORY}/macports-base
-    ./configure --enable-readline
-    make
-    sudo make install
-    make distclean
-    sudo port selfupdate
-    ```
+      ```bash
+      WORKING_DIRECTORY=${HOME}/macports.dir/projects/macports
+      mkdir -p ${WORKING_DIRECTORY}
+      cd ${WORKING_DIRECTORY}
+      git clone https://github.com/macports/macports-base.git
+      cd ${WORKING_DIRECTORY}/macports-base
+      ./configure --enable-readline
+      make
+      sudo make install
+      make distclean
+      sudo port selfupdate
+      ```
 
 7.  in Terminal.app, clone this repository
 
