@@ -89,19 +89,19 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ./install-ports.sh
     ```
 
-10. in Terminal.app, set PostgreSQL 11 as the default version
-
-    ```bash
-    sudo port select postgresql postgresql11
-    ```
-
-11. in Terminal.app, set up PostgreSQL Server
+10. in Terminal.app, set up PostgreSQL Server
 
 
     ```bash
     sudo mkdir -p /opt/local/var/db/postgresql11/defaultdb
     sudo chown postgres:postgres /opt/local/var/db/postgresql11/defaultdb
     sudo su postgres -c '/opt/local/lib/postgresql11/bin/initdb -D /opt/local/var/db/postgresql11/defaultdb'
+    ```
+
+11. in Terminal.app, set PostgreSQL 11 as the default version
+
+    ```bash
+    sudo port select postgresql postgresql11
     ```
 
 12. in Terminal.app, start the PostgreSQL Server
