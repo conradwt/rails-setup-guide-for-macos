@@ -51,11 +51,11 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 6.  download and/or install MacPorts version appropriate for your macOS version
 
-    - using macOS >= 10.14 and < 10.15
+    - if macOS version >= 10.14 and < 10.15
 
       [Download MacPorts](https://distfiles.macports.org/MacPorts/MacPorts-2.5.4-10.14-Mojave.pkg)
 
-    - using macOS >= 10.15 and < 10.16
+    - if macOS version >= 10.15 and < 10.16
 
       ```bash
       WORKING_DIRECTORY=${HOME}/macports.dir/projects/macports
