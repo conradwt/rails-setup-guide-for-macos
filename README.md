@@ -127,7 +127,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     Note: Some or most of the above files may not exist. Thus, if you get the
     following error it's OK:
 
-    e.g. mv: rename .bashrc to .bashrc.orig: No such file or directory
+    e.g. `mv: rename .bashrc to .bashrc.orig: No such file or directory`
 
 15. in Terminal.app, configure the .profile
 
@@ -215,7 +215,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 25. create and/or setup SSH keys
 
-    - have existing ssh keys
+    - if you have SSH keys
 
       - create SSH folder in home directory
 
@@ -233,7 +233,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
         chmod 644 $HOME/id_rsa.pub
         ```
 
-    - doesn't have existing ssh keys
+    - if you don't have SSH keys
 
       - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
@@ -249,7 +249,11 @@ The purpose of this step by step tutorial is to provide a very simple example of
     cp sample.terminal $HOME/.
     ```
 
-28. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
+28. in the Terminal.app, testing your SSH connection
+
+    [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
+
+29. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
 
     ```text
     Terminal -> Preferences -> Profiles, select the 'sample' profile in the left sidebar, click Default at the bottom of the window
