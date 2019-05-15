@@ -229,8 +229,8 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
         ```bash
         chmod 700 $HOME/.ssh
-        chmod 600 $HOME/id_rsa
-        chmod 644 $HOME/id_rsa.pub
+        chmod 600 $HOME/.ssh/id_rsa
+        chmod 644 $HOME/.ssh/id_rsa.pub
         ```
 
     - if you don't have SSH keys
