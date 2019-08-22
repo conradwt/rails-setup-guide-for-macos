@@ -125,3 +125,9 @@ export MANPATH=/usr/local/share/man/man1:${MANPATH}
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+fpath=($fpath ~/.zfunctions ~/.zsh/completions)
+autoload -U compinit && compinit
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
