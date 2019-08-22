@@ -15,6 +15,7 @@ sudo port install \
   git +bash_completion \
   htop \
   httpie \
+  hub \
   ImageMagick \
   libgcrypt \
   libiconv \
@@ -37,4 +38,5 @@ sudo port install \
   yajl \
   yasm \
   zip \
-  zlib
+  zlib \
+  zsh
