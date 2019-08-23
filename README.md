@@ -242,17 +242,17 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-26. in Terminal.app, set the terminal
+26. in the Terminal.app, testing your SSH connection
+
+    [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
+
+27. in Terminal.app, set the terminal
 
     ```bash
     cp sample.terminal $HOME/.
     ```
 
-27. in the Terminal.app, testing your SSH connection
-
-    [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
-
-28. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
+28) in Terminal.app menu, Shell -> Import, select `sample.terminal` file
 
     ```text
     Terminal -> Preferences -> Profiles, select the 'sample' profile in the left sidebar, click Default at the bottom of the window
