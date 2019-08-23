@@ -18,37 +18,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     xcode-select --install
     ```
 
-3.  download and install VS Code Insiders
-
-    [Download VS Code Insiders](https://code.visualstudio.com/docs/?dv=osx&build=insiders)
-
-4.  install VS Code Insiders command line interface (CLI)
-
-    - in VS Code Insiders.app, type
-
-      ```text
-      Command Shift P
-      ```
-
-    - in the input field that appears, type
-
-      ```text
-      shell command install
-      ```
-
-    - select the the following text
-
-      ```text
-      Shell Command: Install `code-insiders` command in PATH
-      ```
-
-5.  in Terminal.app, install VS Code Extensions
-
-    ```bash
-    
-    ```
-
-6.  download and/or install MacPorts version appropriate for your macOS version
+3.  download and/or install MacPorts version appropriate for your macOS version
 
     - if macOS version >= 10.14 and < 10.15
 
@@ -69,26 +39,26 @@ The purpose of this step by step tutorial is to provide a very simple example of
       sudo port selfupdate
       ```
 
-7.  in Terminal.app, clone this repository
+4.  in Terminal.app, clone this repository
 
     ```bash
     git clone https://github.com/conradwt/rails-setup-guide-for-macos
     ```
 
-8.  in Terminal.app, change directory to the cloned repository
+5.  in Terminal.app, change directory to the cloned repository
 
     ```bash
     cd rails-setup-guide-for-macos
     ```
 
-9.  in Terminal.app, install required ports from MacPorts
+6.  in Terminal.app, install required ports from MacPorts
 
     ```bash
     chmod +x install-ports.sh
     ./install-ports.sh
     ```
 
-10. in Terminal.app, set up PostgreSQL Server
+7.  in Terminal.app, set up PostgreSQL Server
 
 
     ```bash
@@ -97,72 +67,135 @@ The purpose of this step by step tutorial is to provide a very simple example of
     sudo su postgres -c '/opt/local/lib/postgresql11/bin/initdb -D /opt/local/var/db/postgresql11/defaultdb'
     ```
 
-11. in Terminal.app, set PostgreSQL 11 as the default version
+8. in Terminal.app, set PostgreSQL 11 as the default version
+
+   ```bash
+   sudo port select postgresql postgresql11
+   ```
+
+9. in Terminal.app, start the PostgreSQL Server
+
+   ```bash
+   pgstart
+   ```
+
+10. download and install Node
+
+    [Download Node](https://nodejs.org/dist/v12.9.0/node-v12.9.0.pkg)
 
     ```bash
-    sudo port select postgresql postgresql11
+    mkdir -p "${HOME}/.npm-packages"
+    npm config set prefix "${HOME}/.npm-packages"
+    NPM_PACKAGES="${HOME}/.npm-packages"
+    export PATH="$NPM_PACKAGES/bin:$PATH"
     ```
 
-12. in Terminal.app, start the PostgreSQL Server
+11. in Terminal.app, install RBenv
 
     ```bash
-    pgstart
+    git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+    chmod -R go-w $HOME/.rbenv
+    cd ~/.rbenv && src/configure && make -C src
+    export PATH=${HOME}/.rbenv/bin:${PATH}
+    eval "$(rbenv init -)"
     ```
 
-13. download and install Node
-
-    [Download Node](https://nodejs.org/dist/v11.14.0/node-v11.14.0.pkg)
-
-14. in Terminal.app, remove existing environment initialization files
+12. in Terminal.app, install all of the approved plugins RBenv plugins
 
     ```bash
-    mv ~/.bashrc ~/.bashrc.orig
-    mv ~/.bash_login ~/.bash_login.orig
-    mv ~/.bash_profile ~/.bash_profile.orig
-    mv ~/.profile ~/.profile.orig
-    mv ~/.zshrc ~/.zshrc.orig
+    chmod +x $HOME/rails-setup-guide-for-macos/install-rbenv-plugins.sh
+    $HOME/rails-setup-guide-for-macos/install-rbenv-plugins.sh
     ```
 
-    Note: Some or most of the above files may not exist. Thus, if you get the
-    following error it's OK:
-
-    e.g. `mv: rename .bashrc to .bashrc.orig: No such file or directory`
-
-15. in Terminal.app, configure the .profile
+13. in Terminal.app, install Ruby
 
     ```bash
-    cp sample.profile $HOME/.profile
-    . ~/.profile
+    rbenv install 2.6.3
+    rbenv global 2.6.3
     ```
 
-    Note: If you see the following:
+14. in Terminal.app, install Rails
 
-    ```text
-    **-bash: rbenv: command not found**
+    ```bash
+    gem update --system
+    gem install bundler
+    gem install rails
+    gem install rubocop
+    gem install solargraph
+    gem install ruby-debug-ide
+    rbenv rehash
     ```
 
-    Please continue to the next step.
+15. in Terminal.app, install Oh My ZSH
 
-16. in Terminal.app, set the Git completion
+    ```bash
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    npm install -g spaceship-prompt
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    mkdir -p $HOME/.zsh/completions
+    curl https://github.com/github/hub/blob/master/etc/hub.zsh_completion >  ~/.zsh/completions/_hub
+    sudo chmod +x $HOME/.zsh/completions/_hub
+    cp -r $HOME/rails-setup-guide-for-macos/sample.zshrc.d ~/.zshrc.d
+    cp $HOME/rails-setup-guide-for-macos/sample.zshrc ~/.zshrc
+    cp $HOME/rails-setup-guide-for-macos/sample.zshenv ~/.zshenv
+    ```
+
+16. download and install VS Code Insiders
+
+    [Download VS Code Insiders](https://code.visualstudio.com/docs/?dv=osx&build=insiders)
+
+17. in Terminal.app, install VS Code Extensions
+
+    ```bash
+    chmod +x $HOME/rails-setup-guide-for-macos/vscode/vscode-extensions.zsh
+    ./$HOME/rails-setup-guide-for-macos/vscode/vscode-extensions.zsh
+    ```
+
+18. install VS Code Insiders command line interface (CLI)
+
+    - in VS Code Insiders.app, type
+
+      ```text
+      Command Shift P
+      ```
+
+    - in the input field that appears, type
+
+      ```text
+      shell command install
+      ```
+
+    - select the the following text
+
+      ```text
+      Shell Command: Install `code-insiders` command in PATH
+      ```
+
+19. download and install Heroku Toolbelt
+
+    [Download Heroku Toolbelt](https://toolbelt.heroku.com)
+
+20. in Terminal.app, set the Git completion
 
     ```bash
     cp sample.git-completion.sh $HOME/.git-completion.sh
     ```
 
-17. in Terminal.app, create a Github.com account
+21. in Chrome, create a Github.com account
 
     ```text
     Note:  Skip this step if you already have an account.
     ```
 
-18. in Terminal.app, create Git configuration and global files
+22. in Terminal.app, create Git configuration and global files
 
     ```bash
     cp sample.gitconfig ~/.gitconfig
     cp sample.gitignore_global ~/.gitignore_global
     ```
 
-19. in Terminal.app, edit .gitconfig file
+23. in Terminal.app, edit .gitconfig file
 
     - change `excludesfile` setting:
 
@@ -179,59 +212,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
       git config --global user.email "johndoe@example.com"
       ```
 
-20. in Terminal.app, install RBenv
-
-    ```bash
-    git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-    ```
-
-21. in Terminal.app, install all of the approved plugins RBenv plugins
-
-    ```bash
-    chmod +x install-rbenv-plugins.sh
-    ./install-rbenv-plugins.sh
-    ```
-
-22. in Terminal.app, install Ruby
-
-    ```bash
-    rbenv install 2.6.3
-    rbenv global 2.6.3
-    ```
-
-23. in Terminal.app, install Rails
-
-    ```bash
-    gem update --system
-    gem install bundler
-    gem install rails
-    gem install rubocop
-    gem install solargraph
-    gem install ruby-debug-ide
-    rbenv rehash
-    ```
-
-24. In Ubuntu, install Oh My ZSH
-
-
-    ```bash
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    npm install -g spaceship-prompt
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-    mkdir -p $HOME/.zsh/completions
-    curl https://github.com/github/hub/blob/master/etc/hub.zsh_completion >  ~/.zsh/completions/_hub
-    sudo chmod +x $HOME/.zsh/completions/_hub
-    cp -r $HOME/rails-setup-guide-for-windows/sample.zshrc.d ~/.zshrc.d
-    cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
-    cp $HOME/rails-setup-guide-for-windows/sample.zshenv ~/.zshenv
-    ```
-
-25. download and install Heroku Toolbelt
-
-    [Download Heroku Toolbelt](https://toolbelt.heroku.com)
-
-26. create and/or setup SSH keys
+24. create and/or setup SSH keys
 
     - if you have SSH keys
 
@@ -257,21 +238,21 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
         Note: Please select Mac link at the top of the page.
 
-27. Add SSH public key to Github
+25. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-28. in Terminal.app, set the terminal
+26. in Terminal.app, set the terminal
 
     ```bash
     cp sample.terminal $HOME/.
     ```
 
-29. in the Terminal.app, testing your SSH connection
+27. in the Terminal.app, testing your SSH connection
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
-30. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
+28. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
 
     ```text
     Terminal -> Preferences -> Profiles, select the 'sample' profile in the left sidebar, click Default at the bottom of the window
