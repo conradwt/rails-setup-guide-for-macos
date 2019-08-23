@@ -45,8 +45,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 5.  in Terminal.app, install VS Code Extensions
 
     ```bash
-    code-insiders --install-extension misogi.ruby-rubocop
-    code-insiders --install-extension rebornix.ruby
+    
     ```
 
 6.  download and/or install MacPorts version appropriate for your macOS version
@@ -177,7 +176,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
       ```bash
       git config --global user.name "John Doe"
-      git config --global user.email johndoe@example.com
+      git config --global user.email "johndoe@example.com"
       ```
 
 20. in Terminal.app, install RBenv
@@ -203,17 +202,36 @@ The purpose of this step by step tutorial is to provide a very simple example of
 23. in Terminal.app, install Rails
 
     ```bash
-    gem install bundler -v=1.17.3
+    gem update --system
+    gem install bundler
     gem install rails
     gem install rubocop
+    gem install solargraph
+    gem install ruby-debug-ide
     rbenv rehash
     ```
 
-24. download and install Heroku Toolbelt
+24. In Ubuntu, install Oh My ZSH
+
+
+    ```bash
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    npm install -g spaceship-prompt
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    mkdir -p $HOME/.zsh/completions
+    curl https://github.com/github/hub/blob/master/etc/hub.zsh_completion >  ~/.zsh/completions/_hub
+    sudo chmod +x $HOME/.zsh/completions/_hub
+    cp -r $HOME/rails-setup-guide-for-windows/sample.zshrc.d ~/.zshrc.d
+    cp $HOME/rails-setup-guide-for-windows/sample.zshrc ~/.zshrc
+    cp $HOME/rails-setup-guide-for-windows/sample.zshenv ~/.zshenv
+    ```
+
+25. download and install Heroku Toolbelt
 
     [Download Heroku Toolbelt](https://toolbelt.heroku.com)
 
-25. create and/or setup SSH keys
+26. create and/or setup SSH keys
 
     - if you have SSH keys
 
@@ -239,21 +257,21 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
         Note: Please select Mac link at the top of the page.
 
-26. Add SSH public key to Github
+27. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-27. in Terminal.app, set the terminal
+28. in Terminal.app, set the terminal
 
     ```bash
     cp sample.terminal $HOME/.
     ```
 
-28. in the Terminal.app, testing your SSH connection
+29. in the Terminal.app, testing your SSH connection
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
-29. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
+30. in Terminal.app menu, Shell -> Import, select `sample.terminal` file
 
     ```text
     Terminal -> Preferences -> Profiles, select the 'sample' profile in the left sidebar, click Default at the bottom of the window

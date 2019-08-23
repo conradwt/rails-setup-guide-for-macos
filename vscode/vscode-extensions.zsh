@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 
 code-insiders --install-extension angryobject.react-pure-to-class-vscode
 code-insiders --install-extension apollographql.vscode-apollo
