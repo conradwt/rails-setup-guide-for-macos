@@ -36,6 +36,7 @@ sudo port install \
   wget \
   wput \
   yajl \
+  yarn \
   yasm \
   zip \
   zlib \
