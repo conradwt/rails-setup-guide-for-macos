@@ -141,18 +141,24 @@ The purpose of this step by step tutorial is to provide a very simple example of
     cp $HOME/rails-setup-guide-for-macos/sample.zshenv ~/.zshenv
     ```
 
-16. download and install VS Code Insiders
+16. in Terminal.app, open another terminal
+
+    ```text
+    Command N
+    ```
+
+17. download and install VS Code Insiders
 
     [Download VS Code Insiders](https://code.visualstudio.com/docs/?dv=osx&build=insiders)
 
-17. in Terminal.app, install VS Code Extensions
+18. in Terminal.app, install VS Code Extensions
 
     ```bash
     chmod +x $HOME/rails-setup-guide-for-macos/vscode/vscode-extensions.zsh
     ./$HOME/rails-setup-guide-for-macos/vscode/vscode-extensions.zsh
     ```
 
-18. install VS Code Insiders command line interface (CLI)
+19. install VS Code Insiders command line interface (CLI)
 
     - in VS Code Insiders.app, type
 
@@ -172,30 +178,30 @@ The purpose of this step by step tutorial is to provide a very simple example of
       Shell Command: Install `code-insiders` command in PATH
       ```
 
-19. download and install Heroku Toolbelt
+20. download and install Heroku Toolbelt
 
     [Download Heroku Toolbelt](https://toolbelt.heroku.com)
 
-20. in Terminal.app, set the Git completion
+21. in Terminal.app, set the Git completion
 
     ```bash
     cp sample.git-completion.sh $HOME/.git-completion.sh
     ```
 
-21. in Chrome, create a Github.com account
+22. in Chrome, create a Github.com account
 
     ```text
     Note:  Skip this step if you already have an account.
     ```
 
-22. in Terminal.app, create Git configuration and global files
+23. in Terminal.app, create Git configuration and global files
 
     ```bash
     cp sample.gitconfig ~/.gitconfig
     cp sample.gitignore_global ~/.gitignore_global
     ```
 
-23. in Terminal.app, edit .gitconfig file
+24. in Terminal.app, edit .gitconfig file
 
     - change `excludesfile` setting:
 
@@ -212,7 +218,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
       git config --global user.email "johndoe@example.com"
       ```
 
-24. create and/or setup SSH keys
+25. create and/or setup SSH keys
 
     - if you have SSH keys
 
@@ -238,15 +244,15 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
         Note: Please select Mac link at the top of the page.
 
-25. Add SSH public key to Github
+26. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-26. in the Terminal.app, testing your SSH connection
+27. in the Terminal.app, testing your SSH connection
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
 
-27. in Terminal.app, set the terminal
+28. in Terminal.app, set the terminal
 
     ```bash
     cp sample.terminal $HOME/.
