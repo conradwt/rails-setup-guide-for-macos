@@ -218,6 +218,12 @@ The purpose of this step by step tutorial is to provide a very simple example of
       git config --global user.email "johndoe@example.com"
       ```
 
+    - set the default pager
+
+      ```bash
+      git config --global core.pager ''
+      ```
+
 25. create and/or setup SSH keys
 
     - if you have SSH keys
