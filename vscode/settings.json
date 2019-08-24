@@ -33,7 +33,7 @@
   },
   "ruby.format": "rubocop",
   "ruby.rubocop.configFilePath": "",
-  "ruby.rubocop.executePath": "/home/<ubuntu-username>/.rbenv/shims/",
+  "ruby.rubocop.executePath": "/Users/<macos-username>/.rbenv/shims/",
   "ruby.rubocop.onSave": true,
   "sync.askGistName": false,
   "sync.autoDownload": false,
@@ -47,16 +47,14 @@
   "sync.syncExtensions": true,
   "terminal.integrated.fontFamily": "'Fira Code', Monaco, Menlo, 'Courier New', monospace",
   "terminal.integrated.fontSize": 19,
-  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  "terminal.integrated.shell.macos": "/opt/local/bin/zsh",
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Cobalt2",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.sideBar.location": "right",
   "editor.wordWrap": "on",
   "prettier.singleQuote": true,
-  "vscode_custom_css.imports": [
-    "/mnt/c/Users/<windows-username>/.vscodestyles.css"
-  ],
+  "vscode_custom_css.imports": ["/Users/<macos-username>/.vscodestyles.css"],
   "workbench.iconTheme": "material-icon-theme",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
