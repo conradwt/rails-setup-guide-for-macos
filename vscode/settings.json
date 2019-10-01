@@ -13,6 +13,8 @@
   "editor.letterSpacing": 0.5,
   "editor.lineHeight": 25,
   "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
     "erb": "html",
