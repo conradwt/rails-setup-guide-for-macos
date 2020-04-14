@@ -1,6 +1,7 @@
 brakeman
 bundler
 bundler-audit
+irb
 rails
 rails_best_practices
 reek

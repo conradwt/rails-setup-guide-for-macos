@@ -119,11 +119,6 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     ```bash
     gem update --system
-    gem install bundler
-    gem install rails
-    gem install rubocop
-    gem install solargraph
-    gem install ruby-debug-ide
     rbenv rehash
     ```
 
