@@ -111,8 +111,8 @@ The purpose of this step by step tutorial is to provide a very simple example of
 13. in Terminal.app, install Ruby
 
     ```bash
-    rbenv install 2.6.3
-    rbenv global 2.6.3
+    rbenv install 2.7.1
+    rbenv global 2.7.1
     ```
 
 14. in Terminal.app, install Rails
