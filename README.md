@@ -105,6 +105,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ```bash
     chmod +x $HOME/rails-setup-guide-for-macos/install-rbenv-plugins.sh
     $HOME/rails-setup-guide-for-macos/install-rbenv-plugins.sh
+    cp $HOME/rails-setup-guide-for-macos/sample.default-gems $HOME/.rbenv/default-gems
     ```
 
 13. in Terminal.app, install Ruby
