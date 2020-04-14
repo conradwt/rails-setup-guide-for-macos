@@ -46,7 +46,6 @@ code-insiders --install-extension sidthesloth.html5-boilerplate
 code-insiders --install-extension streetsidesoftware.code-spell-checker
 code-insiders --install-extension VisualStudioExptTeam.vscodeintellicode
 code-insiders --install-extension vscode-icons-team.vscode-icons
-code-insiders --install-extension wesbos.theme-cobalt2
 code-insiders --install-extension wix.vscode-import-cost
 code-insiders --install-extension xabikos.JavaScriptSnippets
 code-insiders --install-extension xabikos.ReactSnippets

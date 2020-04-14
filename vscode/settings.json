@@ -51,12 +51,10 @@
   "terminal.integrated.fontSize": 19,
   "terminal.integrated.shell.macos": "/opt/local/bin/zsh",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Cobalt2",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.sideBar.location": "right",
   "editor.wordWrap": "on",
   "prettier.singleQuote": true,
-  "vscode_custom_css.imports": ["/Users/<macos-username>/.vscodestyles.css"],
   "workbench.iconTheme": "material-icon-theme",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
