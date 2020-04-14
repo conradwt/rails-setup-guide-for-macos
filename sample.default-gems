@@ -1,0 +1,9 @@
+brakeman
+bundler
+bundler-audit
+rails
+rails_best_practices
+reek
+rubocop
+rubycritic
+solargraph
